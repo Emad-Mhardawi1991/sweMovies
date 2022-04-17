@@ -1,0 +1,32 @@
+.nav{
+	@apply container py-6 flex justify-between items-center space-x-6 text-white  lg:gap-6
+}
+
+.logo{
+	@apply text-primary_red text-3xl font-extrabold  cursor-pointer
+}
+
+.nav_links{
+	@apply  hidden md:flex items-center space-x-4 flex-grow 
+}
+
+.link{
+	@apply nav_link
+}
+
+
+.nav_right{
+	@apply flex justify-center items-center gap-3
+}
+
+.authBtn{
+	@apply hidden md:block
+}
+
+.menuIcon{
+	@apply w-8 h-8 md:hidden
+}
+
+.searchIcon{
+	@apply w-8 h-8 hidden md:block
+}
