@@ -1,0 +1,11 @@
+.movies_section{
+    @apply relative  py-10  lg:py-20
+}
+
+.bg_box{
+    @apply  h-full w-full -z-50  absolute top-0 left-0 
+}
+
+.overlay{
+    @apply bg-primary_black w-full h-full  absolute left-0 top-0 opacity-95 -z-40
+}

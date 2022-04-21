@@ -3,7 +3,12 @@ import Button from '../../ui/button/button';
 import classes from './nav.module.css'
 import { MenuIcon, SearchIcon } from '@heroicons/react/solid'
 
+
 const Nav = () => {
+
+
+
+
   return <nav className={classes.nav}>
     <Link href='/'>
       <div className={classes.logo}>Logo</div>

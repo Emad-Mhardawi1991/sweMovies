@@ -8,6 +8,7 @@
 @layer base{
   body{
     @apply text-black font-Poppins
+    overflow-x-hidden
   }
 
 
@@ -16,10 +17,14 @@
 
 @layer components{
   .container{
-    @apply p-4 max-w-7xl m-auto
+    @apply p-4 max-w-[500px] m-auto 
   }
 
-  .nav_link{
-    @apply cursor-pointer font-bold hover:text-primary_red2
-  }
+}
+
+
+
+
+.hideScroll::-webkit-scrollbar {
+  display: none;
 }

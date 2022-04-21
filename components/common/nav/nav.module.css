@@ -10,8 +10,10 @@
 	@apply  hidden md:flex items-center space-x-4 flex-grow 
 }
 
+
+
 .link{
-	@apply nav_link
+	@apply cursor-pointer font-semibold hover:text-primary_red
 }
 
 
