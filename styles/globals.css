@@ -17,7 +17,7 @@
 
 @layer components{
   .container{
-    @apply p-4 max-w-[500px] m-auto 
+    @apply p-4 max-w-7xl m-auto 
   }
 
 }

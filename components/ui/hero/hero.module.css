@@ -1,0 +1,74 @@
+.hero {
+    @apply w-full min-h-[700px] 
+             bg-primary_black
+              flex flex-col justify-center
+              relative
+              xl:min-h-[750px] md:pt-12;
+  }
+  
+  .overlay {
+    @apply  w-full h-full absolute  
+        
+  }
+  
+  .hero_content {
+    @apply flex flex-col-reverse lg:flex-row justify-center items-center gap-8 z-10  py-28 md:p-20 lg:p-8;
+  }
+  
+  .text_content {
+    @apply w-full text-white;
+  }
+  
+  .text_content h6 {
+    @apply text-primary_red font-extrabold  text-xl
+             md:text-2xl font-Poppins mb-4
+             xl:text-3xl;
+  }
+  
+  .hero_text {
+    @apply text-4xl
+          md:text-5xl font-bold font-Poppins pb-5
+          xl:text-6xl;
+  }
+  
+  .banners {
+    @apply flex gap-3 items-center flex-wrap;
+  }
+  
+  .age_banner {
+    @apply text-primary_black bg-white text-xs font-bold px-1 py-1  border-2 border-white;
+  }
+  
+  .quality_banner {
+    @apply text-xs font-bold px-2 py-1  border-2 border-white;
+  }
+  
+  .time {
+    @apply flex gap-2 items-center;
+  }
+  
+  .release_date {
+    @apply flex gap-1  items-center;
+  }
+  
+  .duration {
+    @apply flex gap-1  items-center;
+  }
+  
+  .icon {
+    @apply w-4 h-4 text-primary_red;
+  }
+  
+  .button {
+    @apply mt-8 rounded-3xl px-10;
+  }
+  
+  .image_box {
+    @apply bg-primary_red  relative
+             h-[300px] sm:h-[350px] md:h-[450px] lg:w-full lg:h-96 p-2 md:p-4 rounded-md
+              xl:h-[472px];
+  }
+  
+  .image_box img {
+    @apply w-full h-full;
+  }

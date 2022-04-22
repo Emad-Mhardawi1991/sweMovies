@@ -2,7 +2,7 @@
 .banner{
     @apply   min-h-[500px]
     
-    relative w-full md:h-[700px] lg:h-[800px] xl:h-[1000px] flex justify-end items-center
+    relative w-full md:h-[700px] lg:h-[800px] xl:h-[1000px] flex justify-end items-center 
 }
 
 .banner_image{
