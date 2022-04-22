@@ -13,6 +13,10 @@ const requests = {
   fetchRomanceMovies: `${BASE_URL}/discover/movie?api_key=${API_KEY}&language=en-US&with_genres=10749`,
   fetchDocumentaries: `${BASE_URL}/discover/movie?api_key=${API_KEY}&language=en-US&with_genres=99`,
   popular_now_url: `${BASE_URL}/movie/popular?api_key=${API_KEY}&language=en-US&with_genres=99`,
+  tv_shows_popular_url : `${BASE_URL}/tv/popular?api_key=${API_KEY}&language=en-US&with_genres=99`
+  // https://api.themoviedb.org/3/tv/popular?api_key=<<api_key>>&language=en-US&page=1
+
+ 
  
 }
 
