@@ -56,7 +56,7 @@ export const getStaticProps = async ()=>{
     props:{
       upcomingMovies: popularTv.data,
       upcomingTvShows: 'upcoming TvShows',
-      upcomingAnime: 'anime'
-    }
-  }
+      upcomingAnime: 'anime',
+    },
+   }
 }

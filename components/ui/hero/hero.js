@@ -33,7 +33,7 @@ const Hero = () => {
           <Button className={classes.button}>Watch Now</Button>
         </div>
         <div className={classes.image_box}>
-          <img alt="movie" src="/images/hero-img-3.jpg" />
+          <img alt="movie" src="/images/hero-img.jpg" />
         </div>
       </div>
     </div>
