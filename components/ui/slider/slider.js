@@ -33,7 +33,7 @@ const Slider = (props) => {
       <div ref={slidesRowRef} className=" group min-h-[200px] w-full gap-10 flex  overflow-x-scroll  hideScroll">
         <ChevronRightIcon onClick={()=>handleClick('right')} className= "  w-12 absolute right-2  top-[58%] -translate-y-1/2 opacity-0 hover:scale-125 transition duration-75 cursor-pointer  group-hover:opacity-100 z-50 "/>
         {isMoved && 
-        <ChevronLeftIcon onClick={()=>handleClick('left')} className="  group-hover:opacity-100  w-12 absolute left-2  top-[58%]  -translate-y-1/2 opacity-0 hover:scale-125 transition duration-75 cursor-pointer group-hover:opacity-100 z-50 "/>
+        <ChevronLeftIcon onClick={()=>handleClick('left')} className="    w-12 absolute left-2  top-[58%]  -translate-y-1/2 opacity-0 hover:scale-125 transition duration-75 cursor-pointer group-hover:opacity-100 z-50 "/>
         }
         {movies.map(movie=> <MovieCard key={movie.id} movie={movie} />)}
       </div>
