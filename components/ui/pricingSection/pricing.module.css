@@ -1,0 +1,13 @@
+.pricingSection{
+    @apply w-full py-24 relative min-h-[700px]  bg-primary_black
+}
+
+.title{
+    @apply text-white text-4xl font-bold text-center relative after:content-[''] 
+    after:w-[150px]  after:-translate-x-[50%] after:bg-red-400 after:h-[4px] 
+    after:text-red-500 after:absolute after:-bottom-8 after:left-[50%]
+}
+
+.cards_container{
+    @apply pt-20  flex gap-4 flex-col justify-center items-center  sm:flex-row
+}

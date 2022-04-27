@@ -1,11 +1,10 @@
 import { useRef, useState } from "react";
-import classes from "./moviesSlider.module.css";
 import { ChevronRightIcon, ChevronLeftIcon } from "@heroicons/react/solid";
 import MovieCard from "../card/card";
 
 
 
-const MoviesSlider = (props) => {
+const Slider = (props) => {
   const slidesRowRef = useRef(null);
   const [isMoved, setIsMoved] = useState(false)
   const movies = props.movies.results;
@@ -29,12 +28,12 @@ const MoviesSlider = (props) => {
     }
   }
   return (
-    <div className={classes.slider}>
-      <h6 className={classes.title}>{props.title}</h6>
-      <div ref={slidesRowRef} className={`group ${classes.slides} hideScroll`}>
-        <ChevronRightIcon onClick={()=>handleClick('right')} className={`${classes.right_arrow} group-hover:opacity-100`}/>
+    <div className='container z-50 text-white  relative mb-4'>
+      <h6 className='text-2xl font-bold md:text-3xl  pb-4 md:-bottom-8'>{props.title}</h6>
+      <div ref={slidesRowRef} className=" group min-h-[200px] w-full gap-10 flex  overflow-x-scroll  hideScroll">
+        <ChevronRightIcon onClick={()=>handleClick('right')} className= "  w-12 absolute right-2  top-[58%] -translate-y-1/2 opacity-0 hover:scale-125 transition duration-75 cursor-pointer  group-hover:opacity-100 z-50 "/>
         {isMoved && 
-        <ChevronLeftIcon onClick={()=>handleClick('left')} className={`${classes.left_arrow}  group-hover:opacity-100`}/>
+        <ChevronLeftIcon onClick={()=>handleClick('left')} className="  group-hover:opacity-100  w-12 absolute left-2  top-[58%]  -translate-y-1/2 opacity-0 hover:scale-125 transition duration-75 cursor-pointer group-hover:opacity-100 z-50 "/>
         }
         {movies.map(movie=> <MovieCard key={movie.id} movie={movie} />)}
       </div>
@@ -42,5 +41,5 @@ const MoviesSlider = (props) => {
   );
 };
 
-export default MoviesSlider;
+export default Slider;
 

@@ -1,6 +1,7 @@
 import { useState,useEffect } from 'react';
 import classes from './layout.module.css'
 import Nav from "../nav/nav";
+import Footer from '../footer/footer';
 
 
 const Layout = (props) => {
@@ -26,6 +27,9 @@ const Layout = (props) => {
         <Nav/>
       </header>
       <main>{props.children}</main>
+      <footer className='pt-20 bg-primary_black'>
+        <Footer/>
+      </footer>
     </div>
   );
 };

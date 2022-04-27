@@ -3,7 +3,7 @@ import axios from "axios";
 import Image from "next/image";
 import Banner from "../../components/ui/banner/banner";
 import requests from "../../utils/requests";
-import MoviesSlider from "../../components/ui/moviesSlider/moviesSlider";
+import Slider from "../../components/ui/slider/slider";
 
 const MoviesPage = (props) => {
 console.log('dddddd', props.topRatedMovies)
@@ -18,10 +18,10 @@ console.log('dddddd', props.topRatedMovies)
         <div className={classes.bg_box}>
           <Image src="/images/bg-2.jpg" layout="fill" objectFit="cover" />
         </div>
-        <MoviesSlider movies={props.popularMovies} title="Popular Now"  />
-        <MoviesSlider movies={props.topRatedMovies} title="Top Rated" />
-        <MoviesSlider movies={props.actionMovies} title="Action" />
-        <MoviesSlider movies={props.ComedyMovies} title="Comedy" />
+        <Slider movies={props.popularMovies} title="Popular Now"  />
+        <Slider movies={props.topRatedMovies} title="Top Rated" />
+        <Slider movies={props.actionMovies} title="Action" />
+        <Slider movies={props.ComedyMovies} title="Comedy" />
       </section>
     </div>
   );
